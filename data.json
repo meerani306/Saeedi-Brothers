@@ -1,0 +1,54 @@
+{
+    "boss": [
+        "images/abu1.jpg",
+        "images/abu2.jpg",
+        "images/abu3.jpg"
+    ],
+    "profiles": [
+        [
+            "images/ahsan1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/azam1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/aslam1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/akhter1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/azher1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/akber1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/arshad1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/amjad1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ],
+        [
+            "images/asad1.jpg",
+            "images/boss1.jpg",
+            "images/boss1.jpg"
+        ]
+    ]
+}
