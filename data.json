@@ -1,54 +1,193 @@
 {
-    "boss": [
-        "images/abu1.jpg",
-        "images/abu2.jpg",
-        "images/abu3.jpg"
-    ],
-    "profiles": [
-        [
-            "images/ahsan1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/azam1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/aslam1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/akhter1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/azher1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/akber1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/arshad1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/amjad1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ],
-        [
-            "images/asad1.jpg",
-            "images/boss1.jpg",
-            "images/boss1.jpg"
-        ]
-    ]
+  "abu": [
+    "images/abu1.jpg",
+    "images/abu2.jpg",
+    "images/abu3.jpg"
+  ],
+  "people": [
+    {
+      "id": 1,
+      "name": "Muhammad Ahsan Shaeen",
+      "about_me": "About Person 1",
+      "images": [
+        "images/ahsan1.jpg",
+        "images/ahsan2.jpg",
+        "images/ahsan3.jpg"
+      ],
+      "visited_cities": ["Karachi", "Lahore", "Islamabad"],
+      "contact_no": "0300-7829082",
+      "email": "person1@example.com",
+      "address": "Akhter colony, Karachi",
+      "dob": "",
+      "age": "45 Years",
+      "field_of_work": "Driver",
+      "department": "Fire Brigade, Pakistan Navy Force",
+      "marital_status": "Married",
+      "no_of_children": 6
+    },
+    {
+      "id": 2,
+      "name": "Muhammad Azam Shahzad",
+      "about_me": "About Person 2",
+      "images": [
+        "images/azam1.jpg",
+        "images/azam2.jpg",
+        "images/azam3.jpg"
+      ],
+      "visited_cities": ["Multan", "Lahore", "Quetta", "Islamabad", "Sargodha", "Karachi"],
+      "contact_no": "0300-6738167",
+      "email": "person2@example.com",
+      "address": "Zahir Pir",
+      "dob": "",
+      "age": " Years",
+      "field_of_work": "Teaching",
+      "department": "Govt. School",
+      "marital_status": "Married",
+      "no_of_children": 2
+    },
+    {
+      "id": 3,
+      "name": "Muhammad Aslam Shahid",
+      "about_me": " ایک خوش اخلاق، ہنس مکھ اور ہر دلعزیز شخصیت جو ہمیشہ دکھ سکھ میں دوسروں کا ساتھ نبھانے پر یقین رکھتا ہے۔ دنیا کے مختلف رنگ دیکھنے اور نئے تجربات حاصل کرنے کی حامی شخصیت، جبکہ مہمان نوازی ان کے مزاج کا خاص حصہ ہے۔ صادق آباد کی نمایاں شخصیت ،  جنھوں نے قرأت میں ضلع رحیم یار خان میں اول پوزیشن حاصل کی، اور محض دس سال کی عمر میں قرآن پاک حفظ کر کے خاندان کا پہلا حافظ قرآن ہونے کا اعزاز حاصل کیا۔ نعت خوانی میں ان کی آواز کو خوب سراہا گیا، اور استاد کی حیثیت سے ہمیشہ اپنے شاگردوں کے لیے شفیق اور رہنما بننے کی کوشش میں مگن رہتے ہیں۔ اخلاق، شوق، اور خدمت کے جذبے سے بھرپور ان کی زندگی، ایک ایسی کہانی ہے جو دلوں کو جوڑنے کا ہنر رکھتی ہے۔",
+      "images": [
+        "images/aslam1.jpg",
+        "images/aslam2.jpg",
+        "images/aslam3.jpg"
+      ],
+      "visited_cities": ["Multan", "Lahore", "Islamabad", "Karachi"],
+      "contact_no": "0301-2603984",
+      "email": "person3@example.com",
+      "address": "Basti Sodhi Goth Sadiq Abad",
+      "dob": "12-Jun-1985",
+      "age": " Years",
+      "field_of_work": "islamic Teacher",
+      "department": "Pakistan Bait Ul Maal",
+      "marital_status": "Married",
+      "no_of_children": 9
+    },
+    {
+      "id": 4,
+      "name": "Muhammad Akhter Shakir",
+      "about_me": "About Person 4",
+      "images": [
+        "images/akhter1.jpg",
+        "images/akhter2.jpg",
+        "images/akhter3.jpg"
+      ],
+      "visited_cities": ["Multan", "Rawalpindi", "Islamabad", "Karachi"],
+      "contact_no": "0300-8883456",
+      "email": "person4@example.com",
+      "address": "Mehmood Miani, Bhong Sharif",
+      "dob": "",
+      "age": " Years",
+      "field_of_work": "islamic Teacher",
+      "department": "Madrasa",
+      "marital_status": "Married",
+      "no_of_children": 5
+    },
+    {
+      "id": 5,
+      "name": "Muhammad Azher",
+      "about_me": "About Person 5",
+      "images": [
+        "images/azher1.jpg",
+        "images/azher2.jpg",
+        "images/azher3.jpg"
+      ],
+      "visited_cities": ["Multan", "Sehwan Sharif", "Quetta", "Karachi"],
+      "contact_no": "0300-6655400",
+      "email": "person5@example.com",
+      "address": "Mehmood Miani, Bhong Sharif",
+      "dob": "",
+      "age": " Years",
+      "field_of_work": "School Teacher",
+      "department": "Islamic School of Sciences",
+      "marital_status": "Married",
+      "no_of_children": 2
+    },
+    {
+      "id": 6,
+      "name": "Muhammad Akber Shahbaz",
+      "about_me": "About Person 6",
+      "images": [
+        "images/akber1.jpg",
+        "images/akber2.jpg",
+        "images/akber3.jpg"
+      ],
+      "visited_cities": ["Multan", "Karachi"],
+      "contact_no": "0300-3927203",
+      "email": "person6@example.com",
+      "address": "Karachi",
+      "dob": "",
+      "age": " Years",
+      "field_of_work": "Tailoring",
+      "department": "Textile Industry",
+      "marital_status": "Single",
+      "no_of_children": 2
+    },
+    {
+      "id": 7,
+      "name": "Muhammmad Arshad Shoaib",
+      "about_me": "About Person 7",
+      "images": [
+        "images/arshad1.jpg",
+        "images/arshad2.jpg",
+        "images/arshad3.jpg"
+      ],
+      "visited_cities": ["Karachi"],
+      "contact_no": "0304-8414124",
+      "email": "person7@example.com",
+      "address": "Karachi",
+      "dob": "",
+      "age": " Years",
+      "field_of_work": "Fashion Designing",
+      "department": "Textile Industry",
+      "marital_status": "Single",
+      "no_of_children": 2
+    },
+    {
+      "id": 8,
+      "name": "Muhammad Amjad",
+      "about_me": "About Person 8",
+      "images": [
+        "images/amjad1.jpg",
+        "images/amjad2.jpg",
+        "images/amjad3.jpg",
+        "images/amjad4.jpg",
+        "images/amjad5.jpg",
+        "images/amjad6.jpg"
+      ],
+      "visited_cities": ["Sukkur", "Multan", "Lahore", "Rawalpindi", "Islamabad", "Karachi"],
+      "contact_no": "0308-1236136",
+      "email": "meerani306@gmail.com",
+      "address": "Wah Cantt, Pakistan",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53066.48310989266!2d72.7150845430874!3d33.76957495626817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa7aad7f40f8b%3A0xdba7a19323c50e32!2sWah%20Cantt%2C%20Pakistan!5e0!3m2!1sen!2s!4v1748415622783!5m2!1sen!2s",
+      "dob": "03-Jan-2000",
+      "age": "25 Years",
+      "field_of_work": "Clerical",
+      "department": "Pakistan Ordance Factories, Wah Cantt",
+      "marital_status": "Married",
+      "no_of_children": 1
+    },
+    {
+      "id": 9,
+      "name": "Muhammad Asad",
+      "about_me": "About Person 9",
+      "images": [
+        "images/asad1.jpg",
+        "images/asad2.jpg",
+        "images/asad3.jpg"
+      ],
+      "visited_cities": ["Multan", "Rawalpindi", "Karachi"],
+      "contact_no": "0306-3482752",
+      "email": "person9@example.com",
+      "address": "Zahir Pir",
+      "dob": "",
+      "age": "22 Years",
+      "field_of_work": "Computer Operator",
+      "department": "Private Industry",
+      "marital_status": "Single",
+      "no_of_children": 0
+    }
+  ]
 }
