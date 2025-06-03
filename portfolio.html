@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAEEDI BROTHERS</title>
+  <style>
+    /* Base Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fdfdfd;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .container h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #007BFF, #00C851, #ff4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: 2px;
+      margin: 20px 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Header */
+    .header {
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      color: black;
+      padding: -1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .navbar img {
+      width: 35px;
+      /* Default size */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Removes bottom spacing */
+
+    }
+
+    /* Hero */
+    .hero {
+      background-size: cover;
+      background-position: center;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+
+
+    .hero-content {
+      text-align: center;
+      color: white;
+      max-width: 80vw;
+      margin-bottom: -40%;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      color: white;
+      text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5),
+        1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+
+
+    /* About */
+    .about {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .about-img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      max-width: 600px;
+      text-align: left;
+      font-size: 1.5rem;
+      text-align: justify;
+      font-family: 'Jameel Noori Nastaleeq', serif;
+      direction: rtl;
+    }
+
+
+
+    /* Sections */
+    .cities,
+    .experience,
+    .gallery,
+    .blog,
+    .contact {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .cards,
+    .gallery,
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card,
+    .post {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      flex: 1 1 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    /* Gallery with Images */
+    .gallery {
+      gap: 1.5rem;
+
+    }
+
+    .work-item {
+      flex: 1 1 calc(33.333% - 2rem);
+      max-width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .work-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .work-item:hover {
+      transform: scale(1.05);
+    }
+
+
+
+
+
+
+
+    /* Footer */
+    .footer {
+      text-align: center;
+
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      color: black;
+    }
+
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .work-item {
+        flex: 1 1 calc(50% - 1rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar img {
+        width: 24px;
+      }
+
+      .card,
+      .plan,
+      .post,
+      .work-item {
+        flex: 1 1 100%;
+      }
+
+      .hero-content {
+        padding: 1rem;
+      }
+
+      .profile-pic {
+        width: 60vw;
+      }
+
+      .gallery {
+
+        align-items: center;
+      }
+
+
+      .work-item {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">SAEEDI BROTHERS</h1>
+      <nav class="navbar">
+        <a href="/index.html"><img src="icons/home.png" alt="Home Icon"></a>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero-img" class="hero" style="background-image: url('');">
+
+    <div class="hero-content">
+      <div class="hero-text">
+
+        <h2 id="person_name"> </h2>
+        <p id="person_deptt"> </p>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/ahsan3.jpg" alt="Image here" class="about-img" id="about-img" />
+      <div class="about-text">
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2>Personal Information</h2>
+    <div class="timeline">
+      <div class="entry"></div>
+      <div class="entry"></div>
+      <div class="entry"></div>
+      <div class="entry"></div>
+      <div class="entry"></div>
+      <div class="entry"></div>
+      <div class="entry"></div>
+    </div>
+  </section>
+
+  <!-- Cities -->
+  <section id="cities" class="cities">
+    <h2>Visited Cities</h2>
+    <div class="cards">
+      <div class="card">Karachi</div>
+      <div class="card">Lahore</div>
+      <div class="card">Islamabad</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="work-item">
+        <img src="" alt="Gallery Image 1" class="gallery-img" />
+      </div>
+      <div class="work-item">
+        <img src="" alt="Gallery Image 2" class="gallery-img" />
+      </div>
+      <div class="work-item">
+        <img src="" alt="Gallery Image 3" class="gallery-img" />
+      </div>
+      <div class="work-item">
+        <img src="" alt="Gallery Image 4" class="gallery-img" />
+      </div>
+      <div class="work-item">
+        <img src="" alt="Gallery Image 5" class="gallery-img" />
+      </div>
+      <div class="work-item">
+        <img src="" alt="Gallery Image 6" class="gallery-img" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Blog -->
+  <section id="blog" class="blog">
+    <h2>Latest Achievements</h2>
+    <div class="posts">
+      <div class="post">5 Best App Development Tools</div>
+      <div class="post">Misconceptions About Payment</div>
+      <div class="post">Startup Business Tips</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+
+
+    <div class="map-container">
+      <h2>Locate Me</h2>
+      <iframe src="" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 SAEEDI BROS - ALL RIGHTS RESERVED</p>
+  </footer>
+
+
+
+
+
+  <script type="text/javascript">// Portfolio script
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const selectedPersonId = localStorage.getItem('selectedPersonId');
+
+      if (!selectedPersonId) {
+        alert("<p>No person selected.</p>");
+        return;
+      }
+
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const people = data.people;
+          const selected_person = selectedPersonId - 1;
+          const newImage = people[selected_person].images[0];
+
+
+
+          // Create profile HTML
+          document.getElementById('person_name').innerHTML = people[selected_person].name;
+          document.getElementById('person_deptt').innerHTML = people[selected_person].department;
+
+          document.getElementById('hero-img').style.backgroundImage = `url('${newImage}')`;
+          document.getElementById('about-img').src = people[selected_person].images[1];
+          //Updating Personal Details      
+          document.getElementsByClassName('entry')[0].innerHTML = "Contact No. : " + people[selected_person].contact_no;
+          document.getElementsByClassName('entry')[1].innerHTML = "Email : " + people[selected_person].email;
+          document.getElementsByClassName('entry')[2].innerHTML = "Address : " + people[selected_person].address;
+          document.getElementsByClassName('entry')[3].innerHTML = "Date of Birth : " + people[selected_person].dob;
+          document.getElementsByClassName('entry')[4].innerHTML = people[selected_person].marital_status;
+          document.getElementsByClassName('entry')[5].innerHTML = "Age : " + people[selected_person].age;
+          document.getElementsByClassName('entry')[6].innerHTML = "No. of Childs : " + people[selected_person].no_of_children;
+
+
+
+          //Updating About US para      
+          document.getElementsByClassName('about-text')[0].innerHTML = "<p> " + people[selected_person].about_me + " </p>";
+
+
+          //Updating gallery items 
+          for (let index = 0; index < 6; index++) {
+            document.getElementsByClassName('gallery-img')[index].src = people[selected_person].images[index];
+
+          }
+
+          //Updating Maps
+          document.getElementsByTagName('iframe')[0].src = people[selected_person].map;
+
+
+
+        })
+        .catch(error => {
+          console.error('Error loading profile:', error);
+          document.getElementById('person_name').innerHTML = "<p>Error loading profile data.</p>";
+        });
+    });
+
+
+
+
+
+  </script>
+</body>
+
+</html>
